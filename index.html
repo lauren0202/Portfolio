@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>minimum</title>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,400;0,500;0,600;0,800;0,900;1,200;1,400;1,500;1,600;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+
+    <style>
+        /* 토글할 대상의 기본 스타일 */
+        #contentBox {
+          background-color: #f2f2f2;
+          padding: 20px;
+          margin: 10px 0;
+        }
+        
+        /* 숨기기 예시: display: none 적용 */
+        .hidden {
+          display: none;
+        }
+    </style>
+
+</head>
+<body>
+    <div class=frame>
+
+        <nav class="navigator">
+            <h3 class="site-name" id="siteName">MINIMUM</h3>
+            <script>
+              document.getElementById('siteName').addEventListener('click', function() {
+                window.location.href = 'mainpage.html';
+              });
+            </script>
+            <ul>
+                <li><a class = "nav-menu" href="index.html">WORK</a></li>
+                <li><a class = "nav-menu" href="info.html">INFO</a></li>
+            </ul>
+
+        </nav>
+
+        <div class="dashboard">
+            <h1 class="sample">PORTFOLIO OF MIN</h1>
+        </div>
+
+        <h5 class="recent-menu">RECENT SUBJECTS</h5>
+
+        <div class="recent-subjects">
+
+            <div class="Grade" id="1st">
+                <img class="thumbnail" id="thumb1" src="thumbnail1.jpg">
+                <div class="subject-info">
+                    <h3 class="subject-name" id="name1">1st GRADE</h3>
+                    <h3 class="subject-name" id="name1">Subjects Completed</h3>
+                    <div class="contentBox">
+                        <button class="toggleBtn">Hide Content</button>
+                        <p class="subject-comment">
+                            미분적분학과 벡터해석 심화(1),(2)<br>
+                            일반 물리학 및 실험(1),(2)<br>
+                            일반 화학 및 실험(1),(2)<br>
+                            글쓰기<br>
+                            경제학 입문 
+                        </p>
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div class="Grade" id="2nd">
+                <div class="subject-info">
+                    <h3 class="subject-name" id="name2-1">2nd GRADE</h3>
+                    <h3 class="subject-name" id="name2-2">Subjects Completed</h3>
+                    <div class="contentBox">
+                        <button class="toggleBtn">Hide Content</button>
+                        <p class="subject-comment">
+                            선형대수(1)<br>
+                            상미분방정식<br>
+                            수학과 프로그래밍<br>
+                            우주의 이해<br>
+                            해석학(1)<br>
+                            선형대수(2)<br>
+                            이산구조<br>
+                            인공지능 개론 및 응용<br>
+                            인공지능 알고리즘
+                        </p>
+                    </div>
+                </div>
+                <img class="thumbnail" id="thumb2" src="thumbnail2.jpg">
+            </div>
+
+            <div class="Grade" id="3rd">
+                <img class="thumbnail" id="thumb3" src="thumbnail3.jpg">
+                <div class="subject-info">
+                    <h3 class="subject-name" id="name1">3rd GRADE</h3>
+                    <h3 class="subject-name" id="name1">Subjects of this semester</h3>
+                    <div class="contentBox">
+                        <button class="toggleBtn">Hide Content</button>
+                        <p class="subject-comment">상미분방정식(재수강) <br> 현대대수(1) <br> 확률론 <br> 자료구조 <br> 객체 지향 프로그래밍 <br> 현대 사회의 법과 권리 </p>
+                    </div>
+                </div>
+            </div>
+
+            
+
+        </div>
+
+        <footer class="footer">
+            <h3 class="contact">CONTACT ME</h3>
+            <div class="links">
+                <a class="github" href="https://github.com/lauren0202">BLOG</a>
+                <a class="instagram" href="https://www.instagram.com/m1_n1_3/">INSTAGRAM</a>
+            </div>
+            <p>Feel free to contact me!</p>
+
+        </footer>
+    </div>
+    <script src="fe_4_hw1.js"></script>
+    <script src="fe_4_hw4.js"></script>
+</body>
+</html>
